@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Fitness</title>
+
+</head>
+<link rel="stylesheet" href="CSS/Style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@600&display=swap" rel="stylesheet">
+<Style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: rgb(0, 176, 147);
+        background: linear-gradient(90deg, rgba(0, 176, 147, 1) 0%, rgba(0, 176, 71, 1) 29%, rgba(141, 201, 79, 1) 100%);
+        color: white;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 100px;
+        top: 10px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        width: 55%;
+        display: block;
+        margin: 40px 350px;
+        /* margin-top: 50px; */
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 34px;
+        top: 50px;
+        display: inline-block;
+        font-family: open-sans;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: rgb(231, 223, 223);
+        /* text-decoration:underline; */
+        /* text-underline-position: under; */
+        /* border-bottom-width: 1px ; */
+
+        /* border-bottom: 1px solid #000;
+        padding-bottom: 1px; */
+
+        border-bottom-width: 4px;
+        border-bottom-style: solid;
+        padding: 34px 23px;
+        line-height: 5px;
+
+    }
+
+    #img1 {
+        height: 120px;
+        width: 160px
+    }
+
+    .btn {
+        background-color: inherit;
+        border: none;
+        margin: 0px 9px;
+        color: white;
+        padding: 4px 4px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(95, 89, 89);
+        color: grey;
+
+    }
+
+    #btn1 {
+        background-color: inherit;
+        border: none;
+        /* size: 10px 10px; */
+    }
+
+    #btn2 {
+        background-color: #87c84f;
+    }
+
+    #text {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+
+    }
+
+    .form-group input {
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        text-align: center;
+        display: block;
+        width: 299px;
+        padding: 6px;
+        border: 5px solid black;
+        margin: 21px auto;
+        background: inherit;
+        color: white;
+
+    }
+    #btnsub{
+        background: white;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        margin: 20px 145px;
+        width: 150px;
+        height: auto;
+    }
+</Style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img id="img1" src="img/logo.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About us</a> </li>
+                <li><a href="#">Fitness Calculator</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn" id="btn1"><img src="img/phone.png" alt=""></button>
+            <button class="btn" id="btn2"><img src="img/mail.png" alt=""></button>
+        </div>
+        <div id="text">
+            <h1 style="font-family: 'Oswald', sans-serif; text-align: center;">Join the Best<br> Gym of Delhi<br> Now!!</h1>
+            <form action="noaction.php"></form>
+            <div class="form-group">
+                <input type="Name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="Name" placeholder="Phone Number" >
+            </div>
+            <div class="form-group">
+                <input type="Name" placeholder="Preferred Timing" >
+            </div>
+            <div class="form-group">
+                <input type="Name" placeholder="Query" >
+            </div>
+            <div class="form-group">
+                <button class="btn" id="btnsub">Submit</button>
+            </div>
+
+        </div>
+
+    </header>
+</body>
+
+</html>
